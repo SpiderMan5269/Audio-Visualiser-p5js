@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!--
+      Music Visualizer — Interactive Audio & Visual Experience
+      Main HTML entry point for the audio visualiser project.
+      Loads p5.js, p5.sound, and all project scripts.
+      Sets up responsive dark background and disables scrollbars.
+    -->
+    <title>Music Visualizer — Interactive Audio & Visual Experience</title>
+    <meta name="description" content="An interactive music visualizer with presets, audio player, and customizable colors.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#121212">
+
+    <style> 
+      /* Page styling for full-canvas experience */
+      body {
+        padding: 0; 
+        margin: 0;
+        overflow: hidden; /* Prevent scrollbars */
+        background: #121212; /* Dark background */
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--
+      Script loading order:
+      - p5.js and p5.sound libraries
+      - Core project scripts: sketch, controls, player, visualisations
+      - Color presets and persistence modules
+      All scripts use 'defer' to load after HTML parsing and in order.
+    -->
+    <script src="lib/p5.min.js" defer></script>
+    <script src="lib/p5.sound.js" defer></script>
+    
+    <script src="sketch.js" defer></script>
+    <script src="controlsAndInput.js" defer></script>
+    <script src="musicPlayer.js" defer></script>
+    
+    <script src="visualisations.js" defer></script>
+
+    <script src="colorPresets.js" defer></script>
+    <script src="colorPersistence.js" defer></script>
+  </body>
+</html>
