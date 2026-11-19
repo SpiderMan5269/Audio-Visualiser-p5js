@@ -1,5 +1,7 @@
 # Audio Visualiser (p5.js)
 
+**Live demo:** https://spiderman5269.github.io/Audio-Visualiser-p5js/
+
 An interactive, real-time audio visualiser built with **p5.js** and **p5.sound**, with ten audio-reactive visual modes, a three-band EQ, colour presets and a 3D gyroscope extension. Built for CM1010 Introduction to Programming II (BSc Computer Science, University of London, academic direction by Goldsmiths).
 
 ## Features
